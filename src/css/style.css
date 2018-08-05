@@ -1,7 +1,6 @@
 body, html {
 	width: 100%;
 	height: 100%;
-	text-align: center;
 }
 
 .resume {
@@ -35,7 +34,6 @@ body, html {
 }
 
 .name {
-	/*margin-bottom: 5rem;*/
 	padding: 8px;
 	padding-left: 15px;
 	padding-right: 15px;
