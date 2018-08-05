@@ -1,0 +1,43 @@
+import React from 'react';
+
+import style from '../../css/style.css';
+
+export default class Resume extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		const { data } = this.props;
+		return (
+			<div class={`${style.sidebar} column column-33`}>
+				<img class={style['profile-img']} src={data.image}></img>
+
+				<h1 class={style.name}>{data.name}</h1>
+
+				<ul>
+					{data.personal.map((item) => {
+						let value;
+
+						if (item.url) {
+							value = <a href={item.url}>{item.value}</a>;
+						} else {
+							value = item.value.split('\n').map((newline) => {
+								return <div>{newline}</div>;
+							});
+						}
+
+						return (
+							<li class="row">
+								<strong class="column column-20">{item.name}</strong>
+								<div class={`${style['sidebar-values']} column column-80`}>
+									{value}
+								</div>
+							</li>
+						);
+					})}
+				</ul>
+			</div>
+		);
+	}
+}
