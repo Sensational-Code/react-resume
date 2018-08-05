@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills';
 
 import style from '../../css/style.css';
 
@@ -11,10 +12,7 @@ export default class Resume extends React.Component {
 		const { data } = this.props;
 		return (
 			<div class={`${style.sidebar} column column-33`}>
-				<img class={style['profile-img']} src={data.image}></img>
-
-				<h1 class={style.name}>{data.name}</h1>
-
+				<h3>Personal</h3>
 				<ul>
 					{data.personal.map((item) => {
 						let value;
@@ -37,6 +35,7 @@ export default class Resume extends React.Component {
 						);
 					})}
 				</ul>
+				<Skills data={data}></Skills>
 			</div>
 		);
 	}

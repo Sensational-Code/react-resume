@@ -1,6 +1,5 @@
 import React from 'react';
 import Projects from './Projects';
-import Skills from './Skills';
 
 import style from '../../css/style.css';
 
@@ -20,7 +19,6 @@ export default class Main extends React.Component {
 
 				<Projects data={data}></Projects>
 
-				<Skills data={data}></Skills>
 			</div>
 		);
 	}

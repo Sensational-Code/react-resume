@@ -15,6 +15,14 @@ body, html {
 	outline: 1px solid gray;
 }
 
+.header {
+	text-align: center;
+	background-color: rgb(53, 58, 65);
+	color: white;
+	padding-top: 3.5rem !important;
+	width: 100%;
+}
+
 .sidebar {
 	outline: 1px solid gray;
 	padding: 2.2rem !important;
@@ -27,7 +35,16 @@ body, html {
 }
 
 .name {
-	margin-bottom: 5rem;
+	/*margin-bottom: 5rem;*/
+	padding: 8px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: 2px white solid;
+	font-size: '42px';
+}
+
+.job-title {
+	display: inline-block;
 }
 
 .sidebar-values {

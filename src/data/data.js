@@ -3,6 +3,8 @@ const data = {
 
 	name: 'Firstname Lastname',
 
+	jobTitle: 'Job Title',
+
 	personal: [
 		{
 			name: 'Phone',
@@ -69,7 +71,22 @@ const data = {
 			name: 'Skill 5',
 			value: 60,
 			color: 'orange',
-		}
+		},
+		{
+			name: 'Skill 6',
+			value: 60,
+			color: 'red',
+		},
+		{
+			name: 'Skill 7',
+			value: 60,
+			color: 'green',
+		},
+		{
+			name: 'Skill 8',
+			value: 60,
+			color: 'blue',
+		},
 	],
 }
 
