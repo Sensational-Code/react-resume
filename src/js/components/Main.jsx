@@ -1,4 +1,6 @@
 import React from 'react';
+import Projects from './Projects';
+import Skills from './Skills';
 
 import style from '../../css/style.css';
 
@@ -16,35 +18,9 @@ export default class Main extends React.Component {
 					<p>{data.overview.value}</p>
 				</div>
 
-				<div id="projects">
-					<h3>Projects</h3>
-					{data.projects.map((item) => {
-						return (
-							<div class="column">
-								<strong class="row">{item.name}</strong>
-								<p class="row">{item.value}</p>
-							</div>
-						);
-					})}
-				</div>
+				<Projects data={data}></Projects>
 
-				<div id="skills">
-					<h3>Skills</h3>
-					{data.skills.map((item) => {
-						const widthStyle = {
-							width: `${item.value}%`,
-							backgroundColor: item.color || 'blue',
-						};
-						return (
-							<div class={style['skill-item']}>
-								{item.name}
-								<div class={style['progress-bar-outer']}>
-									<div class={style['progress-bar-inner']} style={widthStyle}></div>
-								</div>
-							</div>
-						);
-					})}
-				</div>
+				<Skills data={data}></Skills>
 			</div>
 		);
 	}
