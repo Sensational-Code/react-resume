@@ -20,10 +20,11 @@ body, html {
 	color: white;
 	padding-top: 3.5rem !important;
 	width: 100%;
+	height: 16.5rem;
 }
 
 .sidebar {
-	outline: 1px solid gray;
+	border-right: 1px solid gray;
 	padding: 2.2rem !important;
 }
 
@@ -50,8 +51,9 @@ body, html {
 }
 
 .main {
-	outline: 1px solid gray;
+	/*outline: 1px solid gray;*/
 	padding: 3rem !important;
+	height: 95.8rem;
 }
 
 .skill-item {
