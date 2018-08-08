@@ -1,17 +1,29 @@
 body, html {
 	width: 100%;
 	height: 100%;
+	margin: 0;
 }
 
-.resume {
-	width: 793px;
-	height: 1123px;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	outline: 1px solid gray;
+@media only screen and (min-width: 793px) {
+	.resume {
+		width: 793px;
+		height: 1123px;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		outline: 1px solid gray;
+	}
+}
+
+
+@media only screen and (max-width: 793px) {
+	.resume {
+		width: 100%;
+		outline: 0;
+		padding: 0;
+	}
 }
 
 .header {
@@ -48,7 +60,8 @@ body, html {
 }
 
 .sidebar-values {
-	text-align: right;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 .main {

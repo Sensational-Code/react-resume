@@ -25,12 +25,12 @@ export default class Personal extends React.Component {
 						}
 
 						return (
-							<li class="row">
-								<strong class="column column-20">{item.name}</strong>
-								<div class={`${style['sidebar-values']} column column-80`}>
+							<div class="">
+								<strong class="">{item.name}</strong>
+								<div class={`${style['sidebar-values']}`}>
 									{value}
 								</div>
-							</li>
+							</div>
 						);
 					})}
 				</ul>
