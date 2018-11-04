@@ -21,8 +21,8 @@ export default function Personal(props) {
 					}
 
 					return (
-						<div className="">
-							<strong className="">{item.name}</strong>
+						<div>
+							<strong>{item.name}</strong>
 							<div className={`${style['sidebar-values']}`}>
 								{value}
 							</div>
