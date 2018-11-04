@@ -44,7 +44,7 @@ const data = {
 			name: 'Project 3',
 			value: 'Tart cupcake pastry jujubes apple pie chocolate bar. Cake jelly-o fruitcake icing powder. Ice cream jujubes croissant muffin powder.',
 		},
-			{
+		{
 			name: 'Project 4',
 			value: 'Marzipan gummies lemon drops candy canes gummies sugar plum. Oat cake powder marzipan pie cake soufflé halvah cake. Oat cake sugar plum jelly beans sugar plum chocolate bar jelly beans gummies.',
 		},
@@ -92,6 +92,6 @@ const data = {
 			color: 'blue',
 		},
 	],
-}
+};
 
 export default data;
