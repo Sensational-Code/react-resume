@@ -14,9 +14,9 @@ export default class Projects extends React.Component {
 				<h3>Projects</h3>
 				{data.projects.map((item) => {
 					return (
-						<div class="column">
-							<strong class="row">{item.name}</strong>
-							<p class="row">{item.value}</p>
+						<div className="column">
+							<strong className="row">{item.name}</strong>
+							<p className="row">{item.value}</p>
 						</div>
 					);
 				})}

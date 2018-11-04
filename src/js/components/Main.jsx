@@ -11,7 +11,7 @@ export default class Main extends React.Component {
 	render() {
 		const { data } = this.props;
 		return (
-			<div class={`${style.main} column column-67`}>
+			<div className={`${style.main} column column-67`}>
 				<div id="overview">
 					<h3>{data.overview.name}</h3>
 					<p>{data.overview.value}</p>

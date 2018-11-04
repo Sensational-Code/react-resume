@@ -25,9 +25,9 @@ export default class Personal extends React.Component {
 						}
 
 						return (
-							<div class="">
-								<strong class="">{item.name}</strong>
-								<div class={`${style['sidebar-values']}`}>
+							<div className="">
+								<strong className="">{item.name}</strong>
+								<div className={`${style['sidebar-values']}`}>
 									{value}
 								</div>
 							</div>

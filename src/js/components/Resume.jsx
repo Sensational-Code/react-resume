@@ -14,9 +14,9 @@ export default class Resume extends React.Component {
 
 	render() {
 		return (
-			<div class={style.resume}>
+			<div className={style.resume}>
 				<Header data={data}></Header>
-				<div class="row">
+				<div className="row">
 					<Sidebar data={data}></Sidebar>
 					<Main data={data}></Main>
 				</div>

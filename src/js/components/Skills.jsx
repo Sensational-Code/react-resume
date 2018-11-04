@@ -18,10 +18,10 @@ export default class Skills extends React.Component {
 						backgroundColor: item.color || 'blue',
 					};
 					return (
-						<div class={style['skill-item']}>
+						<div className={style['skill-item']}>
 							{item.name}
-							<div class={style['progress-bar-outer']}>
-								<div class={style['progress-bar-inner']} style={widthStyle}></div>
+							<div className={style['progress-bar-outer']}>
+								<div className={style['progress-bar-inner']} style={widthStyle}></div>
 							</div>
 						</div>
 					);
