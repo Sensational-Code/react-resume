@@ -4,18 +4,13 @@ import Skills from './Skills';
 
 import style from '../../css/style.css';
 
-export default class Resume extends React.Component {
-	constructor(props) {
-		super(props);
-	}
+export default function Resume(props) {
+	const { data } = props;
 
-	render() {
-		const { data } = this.props;
-		return (
-			<div className={`${style.sidebar}`}>
-				<Personal data={data} />
-				<Skills data={data} />
-			</div>
-		);
-	}
+	return (
+		<div className={`${style.sidebar}`}>
+			<Personal data={data} />
+			<Skills data={data} />
+		</div>
+	);
 }

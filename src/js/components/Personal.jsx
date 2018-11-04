@@ -2,39 +2,34 @@ import React from 'react';
 
 import style from '../../css/style.css';
 
-export default class Personal extends React.Component {
-	constructor(props) {
-		super(props);
-	}
+export default function Personal(props) {
+	const { data } = props;
 
-	render() {
-		const { data } = this.props;
-		return (
-			<div id="personal">
-				<h3>Personal</h3>
-				<ul>
-					{data.personal.map((item) => {
-						let value;
+	return (
+		<div id="personal">
+			<h3>Personal</h3>
+			<ul>
+				{data.personal.map((item) => {
+					let value;
 
-						if (item.url) {
-							value = <a href={item.url}>{item.value}</a>;
-						} else {
-							value = item.value.split('\n').map(newline => (
-								<div>{newline}</div>
-							));
-						}
+					if (item.url) {
+						value = <a href={item.url}>{item.value}</a>;
+					} else {
+						value = item.value.split('\n').map(newline => (
+							<div>{newline}</div>
+						));
+					}
 
-						return (
-							<div className="">
-								<strong className="">{item.name}</strong>
-								<div className={`${style['sidebar-values']}`}>
-									{value}
-								</div>
+					return (
+						<div className="">
+							<strong className="">{item.name}</strong>
+							<div className={`${style['sidebar-values']}`}>
+								{value}
 							</div>
-						);
-					})}
-				</ul>
-			</div>
-		);
-	}
+						</div>
+					);
+				})}
+			</ul>
+		</div>
+	);
 }
