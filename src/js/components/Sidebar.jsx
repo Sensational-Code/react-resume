@@ -13,8 +13,8 @@ export default class Resume extends React.Component {
 		const { data } = this.props;
 		return (
 			<div className={`${style.sidebar}`}>
-				<Personal data={data}></Personal>
-				<Skills data={data}></Skills>
+				<Personal data={data} />
+				<Skills data={data} />
 			</div>
 		);
 	}

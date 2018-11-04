@@ -17,7 +17,7 @@ export default class Main extends React.Component {
 					<p>{data.overview.value}</p>
 				</div>
 
-				<Projects data={data}></Projects>
+				<Projects data={data} />
 
 			</div>
 		);

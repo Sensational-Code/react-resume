@@ -19,9 +19,9 @@ export default class Personal extends React.Component {
 						if (item.url) {
 							value = <a href={item.url}>{item.value}</a>;
 						} else {
-							value = item.value.split('\n').map((newline) => {
-								return <div>{newline}</div>;
-							});
+							value = item.value.split('\n').map(newline => (
+								<div>{newline}</div>
+							));
 						}
 
 						return (

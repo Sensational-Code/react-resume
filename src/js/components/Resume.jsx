@@ -15,10 +15,10 @@ export default class Resume extends React.Component {
 	render() {
 		return (
 			<div className={style.resume}>
-				<Header data={data}></Header>
+				<Header data={data} />
 				<div className="row">
-					<Sidebar data={data}></Sidebar>
-					<Main data={data}></Main>
+					<Sidebar data={data} />
+					<Main data={data} />
 				</div>
 			</div>
 		);

@@ -21,7 +21,7 @@ export default class Skills extends React.Component {
 						<div className={style['skill-item']}>
 							{item.name}
 							<div className={style['progress-bar-outer']}>
-								<div className={style['progress-bar-inner']} style={widthStyle}></div>
+								<div className={style['progress-bar-inner']} style={widthStyle} />
 							</div>
 						</div>
 					);
